@@ -35,6 +35,11 @@ function handleMinus(evt) {
 
 function render() {
   countEl.textContent = count;
+  console.log(Math.sign(count));
+  if (Math.sign(count) === -1) {
+    countEl.style.color = 'red';
+  }
+  
 }
 
 
